@@ -1,0 +1,135 @@
+@import "filter"
+
+.item
+    width: 360px
+    background: #F8F8F8
+    position: relative
+    margin-bottom: 30px
+
+    &-box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-between
+
+    &-link
+        text-decoration: none
+        display: block
+        width: 360px
+
+    &_product-img
+        width: 100%
+
+    &_product
+        padding: 25px 16px 20px 16px
+
+    &_product-heading
+        margin-bottom: 12px
+        font-size: 13px
+        line-height: 16px
+        color: $site-tcolor-black
+        text-transform: $text-t-upp
+
+    &_product-text
+        margin-bottom: 18px
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: $site-tcolor-darkgrey
+
+    &_product-price
+        font-size: 16px
+        line-height: 19px
+        color: $site-tcolor-terracotta
+        text-transform: $text-t-upp
+        font-weight: 400
+
+    &:hover .item_product-img
+        filter: brightness(30%)
+
+    &_button
+        border: 1px solid $button-terracotta
+        text-decoration: none
+        font-size: 16px
+        line-height: 19px
+        color: $button-terracotta
+        text-align: center
+        display: inline-block
+        padding: 14px 38px 14px 38px
+
+    &_button-box
+        display: flex
+        justify-content: center
+        margin-bottom: 95px
+
+    &_button:hover
+        background: $button-terracotta
+        border: 1px solid $button-terracotta
+        color: $button-white
+
+.add-box
+    display: none
+    position: absolute
+    justify-content: center
+    width: 100%
+    pointer-events: none
+    top: 188px
+
+.add
+    display: flex
+    text-decoration: none
+    border: 1px solid $button-white
+    padding: 8px
+    justify-content: center
+    align-items: center
+
+    &-basket
+        margin-right: 11px
+
+    &-text
+        font-size: 14px
+        line-height: 17px
+        color: $button-white
+
+    .item:hover &-box
+        display: flex
+
+    &:hover
+        box-shadow: 0 0 10px 0 $button-white
+
+.danuas
+    list-style: none
+    display: inline-block
+    padding: 0
+    margin-top: 48px
+    margin-bottom: 96px
+    border: 1px solid #EBEBEB
+    margin-left: ($site-width - 282) / 2
+    margin-right: ($site-width - 282) / 2
+    width: 280px
+    height: 40px
+
+.danuas li
+    display: inline
+    text-align: center
+
+.danuas a
+    float: left
+    display: block
+    font-size: 16px
+    text-decoration: none
+    padding: 11px
+    color: #EBEBEB
+    margin-left: -1px
+    line-height: 19px
+
+.deystvuyus
+    color: #EF5B70 !important
+
+.danuas a.deystvuyus
+    cursor: default
+
+.danuas a:deystvuyus
+    outline: none
+
+.perva-peklucatel a:hover
+    color: #EF5B70

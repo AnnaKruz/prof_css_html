@@ -1,0 +1,104 @@
+.card-slider
+    display: flex
+    align-items: center
+    justify-content: space-between
+    height: 777px
+    background: $site-bcolor-lightgrey
+
+.fa-angle-left,
+.fa-angle-right
+    background-color: rgba(42, 42, 42, 0.15)
+    color: $site-tcolor-black
+    width: 47px
+    height: 47px
+    @include txt(21px, 47px, center)
+
+.fa-angle-left:hover,
+.fa-angle-right:hover
+    color: $site-bcolor-terracotta
+
+.card-text
+    border: 1px solid #EAEAEA
+    padding: 65px 250px 65px 250px
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: -40px
+    position: relative
+    background-color: white
+    margin-bottom: 130px
+    flex-wrap: wrap
+
+    &-heading_mini
+        text-transform: $text-t-upp
+        color: $site-tcolor-terracotta
+        margin-bottom: 12px
+        @include txt(14px, 17px, center)
+
+.card-line
+    height: 3px
+    width: 60px
+    background: $site-bcolor-terracotta
+    border: none
+    margin-left: 40%
+    margin-right: 40%
+    margin-bottom: 12px
+
+.card-text-heading
+    text-transform: $text-t-upp
+    @include txt(18px, 22px, center)
+    color: $site-tcolor-darkgrey + 1
+    margin-bottom: 48px
+
+.card-text_mini
+    @include txt(14px, 17px, center)
+    color: $site-tcolor-darkgrey
+    margin-bottom: 32px
+
+.card-text-price
+    text-transform: $text-t-upp
+    color: $site-tcolor-terracotta
+
+.card-line-price
+    width: 641px
+    height: 1px
+    background: #EAEAEA
+    border: none
+    margin: 65px 0
+
+.add-box-product
+    justify-content: center
+    width: 100%
+    pointer-events: none
+    top: 188px
+    margin: 49px 205px 0
+
+.add-product
+    display: flex
+    text-decoration: none
+    @include txt(24px, 29px, center)
+    border: 1px solid $button-terracotta
+    padding: 8px
+    justify-content: center
+    align-items: center
+    width: 211px
+
+.add-text-product
+    font-size: 16px
+    line-height: 19px
+    color: $button-terracotta
+
+.card__filter select
+    border: none
+    color: #6F6E6E
+    @include txt(14px, 17px, left)
+    text-transform: $text-t-upp
+
+.card__filter option
+    @include txt(14px, 17px, left)
+    text-transform: $text-t-upp
+    color: #6F6E6E
+    border: none
+
+.card-item_sec
+    margin-bottom: 128px
