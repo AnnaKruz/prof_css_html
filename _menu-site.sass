@@ -1,0 +1,97 @@
+.header
+    background-color: $site-bcolor-dark
+
+    &_menu
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 75px
+        padding: 0 10px 0 10px
+
+.menu_left
+    list-style-type: none
+    display: flex
+    justify-content: flex-start
+    align-items: center
+
+    & img
+        margin-right: 23px
+
+.menu_right
+    list-style-type: none
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+    & img
+        margin-left: 23px
+
+.menu-list
+    position: relative
+
+.mega-box
+    background-color: $site-bcolor-white
+    position: absolute
+    margin-left: 33px
+    padding: 38px 34px
+    box-shadow: 5px 10px 30px rgba(39, 40, 41, 0.2)
+    min-width: 232px
+    display: none
+    top: 48px
+    z-index: 1
+
+.box-menu
+    padding: 10px
+
+.menu-list:hover .mega-box
+    display: block
+
+.mega-menu_link
+    display: block
+    text-decoration: none
+    font-size: 14px
+    line-height: 17px
+    color: $site-tcolor-darkgrey
+    margin-left: 21px
+    margin-bottom: 16px
+
+    &:hover
+        color: $site-tcolor-terracotta
+
+.name_page
+    background: $site-bcolor-lightpink
+
+    &-content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        height: 148px
+
+    &-text
+        text-transform: $text-t-upp
+        font-size: 24px
+        line-height: 29px
+        color: $site-tcolor-terracotta
+
+    &-link a
+        padding-left: 5px
+        padding-right: 5px
+        text-decoration: none
+        text-transform: $text-t-upp
+        font-size: 14px
+        line-height: 17px
+        color: $site-tcolor-darkgrey
+
+    &-link a:last-child
+        color: $site-tcolor-terracotta
+.heading-menu
+    text-transform: $text-t-upp
+    font-size: 14px
+    color: $site-tcolor-black
+    margin-bottom: 24px
+
+    &_item
+        text-transform: $text-t-upp
+        font-size: 14px
+        color: $site-tcolor-terracotta
+        margin-bottom: 12px
