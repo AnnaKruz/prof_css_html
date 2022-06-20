@@ -1,0 +1,29 @@
+*
+    margin: 0
+    padding: 0
+    outline: none
+
+@mixin txt ($fs, $lh, $ta)
+    font-size: $fs
+    line-height: $lh
+    text-align: $ta
+
+@import "vars"
+.container
+    max-width: $site-width
+    margin: 0 auto
+    padding: 0 1%
+
+body
+    font-family: 'Lato', sans-serif
+@import "menu-site"
+@import "index"
+@import "product"
+@import "catalog"
+@import "registration"
+@import "cart"
+@import "footer"
+@import "menu-site-media"
+@import "footer-media"
+@import "index-media"
+@import "catalog-media"
