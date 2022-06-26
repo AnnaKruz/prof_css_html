@@ -1,0 +1,149 @@
+.item__filter
+    display: flex
+    margin-top: 51px
+    margin-bottom: 64px
+    position: relative
+
+// большой фильтр в каталоге    
+.filter__big
+    display: block
+    z-index: 100
+    width: 32%
+    position: relative
+    @include txt(14px, 17px, left)
+    color: $site-tcolor-black
+    text-transform: $text-t-upp
+    text-decoration: none
+    summary
+        display: block
+        cursor: pointer
+        padding-left: 5%
+    summary::-webkit-details-marker
+        display: none
+    img
+        margin-left: 11px
+
+.item__filter_big-check
+    display: block
+    width: 99%
+    background-color: $site-bcolor-white
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding-top: 67px
+    margin-top: -40px
+    position: absolute
+
+.filter__big-child
+    color: $site-tcolor-darkgrey
+    summary
+        display: block
+        padding-left: 17px
+        hr
+            border: 1px solid #EBEBEB
+            margin-top: 8px
+            margin-bottom: 18px
+            padding-right: 10px
+
+    summary::-webkit-details-marker
+        display: none
+    summary::before
+        content: ''
+        padding-right: 5px
+        padding-top: 10px
+        padding-bottom: 10px
+        margin-right: 11px
+        background-color: $site-bcolor-terracotta
+        height: 37px
+    li
+        list-style: none
+        margin-bottom: 11px
+        padding-left: 34px
+        a
+            text-decoration: none
+            color: $site-tcolor-darkgrey
+            text-transform: none
+    li:hover
+        color: $site-tcolor-white
+        background-color: $site-bcolor-pink
+
+.filter__big-name
+    position: relative
+
+.big-child-list
+    margin-top: 24px
+    margin-bottom: 24px
+
+.filter__big-name::after
+    content: url(img/filter.svg)
+    padding-left: 10px
+
+.filter__big[open] > .filter__big-name::after
+    content: url(img/filter__big-name.png)
+.filter__big[open] > .filter__big-name
+    color: $site-tcolor-terracotta
+    z-index: 1
+.filter__big[open] > .filter__big
+    position: absolute
+    z-index: 1
+.filter__big[open] > img
+    display: none
+
+// малые фильтры в каталоге
+.filter__mini
+    margin-left: 30px
+    position: relative
+    @include txt(14px, 17px, left)
+    text-transform: $text-t-upp
+    color: #6F6E6E
+    summary
+        display: block
+        cursor: pointer
+    summary::-webkit-details-marker
+        display: none
+    &-check
+        z-index: 1
+        position: absolute
+    img
+        margin-left: 10px
+
+.filter__mini-check
+    width: 100%
+    background-color: $site-bcolor-white
+    box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+    padding: 10px
+    position: absolute
+
+.filter__mini:last-child
+    width: 130px
+
+.mini-check
+    list-style: none
+    text-transform: $text-t-upp
+    @include txt(14px, 16px, left)
+    color: #6F6E6E
+    margin-bottom: 6px
+
+.filter__mini-checkbox
+    position: absolute
+    z-index: -1
+    opacity: 0
+.filter__mini-checkbox+label
+    display: inline-block
+    align-items: center
+    user-select: none
+.filter__mini-checkbox+label::before
+    content: ''
+    display: inline-block
+    flex-shrink: 0
+    flex-grow: 0
+    border: 1px solid #EBEBEB
+    width: 12px
+    height: 12px
+    margin-right: 9px
+    background-repeat: no-repeat
+    background-position: center center
+    background-size: 50% 50%
+
+.filter__mini-checkbox:checked+label::before
+    border-color: $site-bcolor-terracotta
+    background-color: $site-bcolor-terracotta
+    background-image: url(img/checkmark-white.png)

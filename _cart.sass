@@ -1,0 +1,125 @@
+.main-button-cart-get
+    font-size: 11px
+    line-height: 13px
+    border: 1px solid $site-tcolor-grey
+    height: 35px
+    width: 100px
+    color: $site-tcolor-darkgrey
+    text-transform: $text-t-upp
+    text-align: center
+    margin-top: 23px
+    margin-bottom: 57px
+    cursor: pointer
+
+.main-cart-price
+    padding: 43px 39px 43px 42px
+    background: #F5F3F3
+    width: 360px
+
+.cart-text_price-mini
+    font-size: 11px
+    line-height: 13px
+    color: #4A4A4A
+    text-align: right
+    margin-bottom: 12px
+
+.cart-text_price
+    font-size: 16px
+    line-height: 19px
+    color: $site-bcolor-dark
+    text-align: right
+
+.cart-line_price
+    height: 1px
+    background: #EAEAEA
+    border: none
+    margin-bottom: 17px
+    margin-top: 21px
+
+.cart__main-product-botton
+    display: flex
+    justify-content: space-between
+    width: 100%
+    margin-top: 32px
+
+.main-button-cart
+    text-align: center
+    text-transform: $text-t-upp
+    cursor: pointer
+    &_add
+        width: 100%
+        background-color: $button-terracotta
+        color: $button-white
+        border: none
+        height: 50px
+        @include txt(16px, 19px, center)
+    &_onn
+        background-color: $button-white
+        border: 1px solid $site-tcolor-darkgrey
+        color: $site-tcolor-black
+        @include txt(14px, 17px, center)
+        width: 40%
+        height: 50px
+
+.main-button-cart_add:hover
+    border: 1px solid $button-terracotta
+    color: $button-terracotta
+    background-color: $button-white
+    cursor: pointer
+    transition: all 1s
+
+.cart
+    &__main-product
+        display: flex
+        flex-wrap: wrap
+        width: 55%
+        align-items: flex-start
+    &__product
+        display: flex
+        box-shadow: 15px 15px 35px rgba(0, 0, 0, 0.21)
+        height: 305px
+        width: 100%
+        margin-bottom: 40px
+        align-items: flex-start
+    &__product:hover
+        transform: scale(1.05, 1.05)
+        transition: transform 1s
+        cursor: pointer
+    &__img
+        width: 304px
+        img
+            width: 100%
+    &__content
+        padding: 22px 57px 62px 32px
+        &-heading
+            text-transform: $text-t-upp
+            @include txt(24px, 29px, left)
+            color: $site-bcolor-dark
+            padding-bottom: 42px
+        &-text
+            @include txt(20px, 26px, left)
+            color: $site-tcolor-darkgrey
+            padding-bottom: 6px
+            input
+                margin-left: 10px
+                padding: 2px 5px
+                text-align: center
+                border: 1px solid #EAEAEA
+                color: #656565
+
+    &__delete
+        padding-right: 22px
+        padding-top: 28px
+        width: 18px
+        height: 18px
+        cursor: pointer
+        img
+            width: 100%
+
+    .quantity
+        width: 10%
+.main-button-cart-get:hover, .main-button-cart_onn:hover
+    background: $button-terracotta
+    border: 1px solid $button-terracotta
+    color: $button-white
+    transition: all 1s
