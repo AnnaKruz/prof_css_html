@@ -96,6 +96,11 @@
     min-height: 79px
     align-items: center
 
+.footer_society
+    display: flex
+    align-items: center
+    gap: 8px
+
 .footer_copy
     font-size: 16px
     line-height: 19px
@@ -103,15 +108,20 @@
     align-items: center
 
 .fa-brands
-    font-size: 16px
     background-color: $button-white
     color: #000000
-    padding: 8px
-    margin-left: 1%
+    gap: 7px
+    width: 32px
+    height: 32px
+    display: flex
+    justify-content: center
+    align-items: center
 
     &:hover
         background-color: $button-terracotta
-        color: $button-white
+
+.fa-brands:hover svg path
+    fill: $button-white
 
 .input-text
     font-size: 14px
